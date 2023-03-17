@@ -1,7 +1,8 @@
 import React from "react";
+import "./nounContent.scss";
 
 function NounContent() {
-  return <div>NounContent</div>;
+  return <section className="nounSection">NounContent</section>;
 }
 
 export default NounContent;

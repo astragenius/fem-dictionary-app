@@ -1,7 +1,8 @@
 import React from "react";
+import "./verbContent.scss";
 
 function VerbContent() {
-  return <div>VerbContent</div>;
+  return <section className="verbSection">VerbContent</section>;
 }
 
 export default VerbContent;
