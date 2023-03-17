@@ -1,7 +1,8 @@
 import React from "react";
-import "./styles.scss";
+import "./header.scss";
 import logo from "../../assets/images/logo.svg";
-import themeLogo from "../../assets/images/icon-moon.svg";
+import RadioButton from "./RadioButton/RadioButton";
+import DropDown from "./Dropdown/DropDown";
 
 function Header() {
   return (
@@ -11,17 +12,10 @@ function Header() {
       </div>
       <div className="select-container">
         <div className="font-select-container">
-          <select name="font-select" id="">
-            <option selected value="Sans Serif">
-              Sans Serif
-            </option>
-            <option value="Serif">Serif</option>
-            <option value="Mono">Mono</option>
-          </select>
+          <DropDown />
         </div>
         <div className="theme-container">
-          <input type="checkbox" />
-          <img src={themeLogo} alt="" />
+          <RadioButton />
         </div>
       </div>
     </div>
