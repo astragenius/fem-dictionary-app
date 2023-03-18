@@ -26,6 +26,9 @@
   --clr-play-bg: hsl(var(--clr-purple-hsl));
   --clr-themeSwitch-bg: hsl(var(--clr-gray-hsl-500));
   --clr-themeSwitch-bg-purple: hsl(var(--clr-purple-hsl));
+  --clr-dropdown-text: hsl(var(--clr-dark-hsl-700));
+
+  --clr-drop-downDivide: hsl(var(--clr-light-hsl-500));
 
   /* Fonts-sizes */
   --fs-900: 4rem; //64px
@@ -47,6 +50,12 @@
     var(--clr-dark-hsl-800),
     calc(1.36rem + 2.72vw),
     var(--fs-900)
+  );
+
+  --fs-dynamic-14-18: clamp(
+    var(--fs-300),
+    calc(0.79rem + 0.38vw),
+    var(--fs-500)
   );
 
   /* Sizes */

@@ -3,13 +3,29 @@ import "./dropDown.scss";
 
 function DropDown() {
   return (
-    <select name="font-select" id="">
-      <option selected value="Sans Serif">
+    <div className="dropdown">
+      <button type="button" className="dropbtn">
         Sans Serif
-      </option>
-      <option value="Serif">Serif</option>
-      <option value="Mono">Mono</option>
-    </select>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="8"
+          viewBox="0 0 14 8"
+        >
+          <path
+            fill="none"
+            stroke="#A445ED"
+            strokeWidth="1.5"
+            d="m1 1 6 6 6-6"
+          />
+        </svg>
+      </button>
+      <div className="dropdown-content">
+        <button type="button">Sans Serif</button>
+        <button type="button">Serif</button>
+        <button type="button">Mono</button>
+      </div>
+    </div>
   );
 }
 
