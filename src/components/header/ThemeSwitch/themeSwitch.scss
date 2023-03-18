@@ -1,3 +1,48 @@
 .checkBox-container {
-  border: 1px solid magenta;
+  display: flex;
+  align-items: center;
 }
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.checkbox-label {
+  cursor: pointer;
+  text-indent: -99999px;
+  width: 40px;
+  height: 20px;
+  background: var(--clr-themeSwitch-bg);
+  display: block;
+  border-radius: 100vh;
+  position: relative;
+}
+.checkbox-label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 100vh;
+  transition: 0.3s;
+}
+
+input:checked + .checkbox-label {
+  background: var(--clr-themeSwitch-bg-purple);
+}
+input:checked ~ .iconMoon {
+  --clr-themeSwitch-bg: var(--clr-themeSwitch-bg-purple);
+}
+input:checked + .checkbox-label::after {
+  left: calc(100% - 3px);
+  transform: translateX(-100%);
+}
+.checkbox-label:active:after {
+  width: 20px;
+}
+
+/* Moon SVG */

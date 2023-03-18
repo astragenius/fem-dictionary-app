@@ -4,3 +4,38 @@
   width: min(var(--max-width), 100% - var(--padding) * 2);
   margin-inline: auto;
 }
+
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.padding-8 {
+  padding: var(--size-200);
+}
+.padding-12 {
+  padding: var(--size-300);
+}
+
+.margin-inline-8 {
+  margin-inline: var(--size-200);
+}
+.margin-inline-12 {
+  margin-inline: var(--size-300);
+}
+.margin-inline-end-12 {
+  -webkit-margin-end: var(--size-300);
+  margin-inline-end: var(--size-300);
+}

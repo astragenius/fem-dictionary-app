@@ -6,7 +6,7 @@ import DropDown from "./Dropdown/DropDown";
 
 function Header() {
   return (
-    <div className="header-container">
+    <div className="header-container padding-8">
       <div className="logo-container">
         <img src={logo} alt="Dictionary web Logo" />
       </div>
