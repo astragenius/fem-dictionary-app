@@ -5,12 +5,16 @@ import "./searchbar.scss";
 function Searchbar() {
   return (
     <div className="searchBar-container">
-      <input
-        placeholder="Search for any word..."
-        type="text"
-        name="searchInput"
-      />
-      <img src={searchIcon} alt="" />
+      <label className="searchInput-label" htmlFor="searchInput">
+        <input
+          className="searchInput"
+          placeholder="Search for any word..."
+          type="text"
+          name="searchInput"
+          id="searchInput"
+        />
+        <img className="searchIcon" src={searchIcon} alt="" />
+      </label>
     </div>
   );
 }

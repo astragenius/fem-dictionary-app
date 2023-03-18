@@ -1,0 +1,34 @@
+.contentTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: var(--fs-dynamic-32-64);
+  font-weight: 700;
+}
+.title p {
+  color: var(--clr-themeSwitch-bg-purple);
+  font-weight: 500;
+  font-size: var(--fs-dynamic-18-24);
+}
+
+.audioButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.audioIcon {
+  --icon-color: var(--clr-themeSwitch-bg-purple);
+  --icon-opacity: 0.25;
+}
+.audioIcon g:hover {
+  --icon-color: #ffff;
+  transition: all 0.3s;
+}
+.audioIcon circle:hover {
+  --icon-bg: var(--clr-themeSwitch-bg-purple);
+  --icon-opacity: 1;
+  transition: all 0.3s;
+}

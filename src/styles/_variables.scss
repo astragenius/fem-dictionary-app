@@ -47,7 +47,7 @@
     var(--fs-700)
   );
   --fs-dynamic-32-64: clamp(
-    var(--clr-dark-hsl-800),
+    var(--fs-800),
     calc(1.36rem + 2.72vw),
     var(--fs-900)
   );
