@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.scss";
 import logo from "../../assets/images/logo.svg";
-import RadioButton from "./RadioButton/RadioButton";
+import ThemeSwitch from "./ThemeSwitch/ThemeSwitch";
 import DropDown from "./Dropdown/DropDown";
 
 function Header() {
@@ -15,7 +15,7 @@ function Header() {
           <DropDown />
         </div>
         <div className="theme-container">
-          <RadioButton />
+          <ThemeSwitch />
         </div>
       </div>
     </div>
