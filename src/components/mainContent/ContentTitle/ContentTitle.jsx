@@ -5,8 +5,8 @@ function ContentTitle() {
   return (
     <section className="contentTitle">
       <div className="title">
-        <h1>keyboard</h1>
-        <p>/ˈkiːbɔːd/</p>
+        <h1 className="ff-dynamic-32-64 fw-900">keyboard</h1>
+        <p className="fw-500 ff-dynamic-18-24">/ˈkiːbɔːd/</p>
       </div>
       <div className="audio">
         <button className="audioButton" type="button">

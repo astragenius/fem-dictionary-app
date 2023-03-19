@@ -17,18 +17,27 @@
 
   /* lightmode color */
   --clr-body: hsl(var(--clr-light-hsl-100));
+
   --clr-head-text: hsl(var(--clr-dark-hsl-700));
   --clr-pronounce-text: hsl(var(--clr-purple-hsl));
   --clr-body-text: hsl(var(--clr-dark-hsl-700));
+
   --clr-input-bg: hsl(var(--clr-light-hsl-300));
   --clr-input-text: hsl(var(--clr-dark-hsl-700));
   --clr-input-placeholder-text: hsl(var(--clr-dark-hsl-700));
+
   --clr-play-bg: hsl(var(--clr-purple-hsl));
   --clr-themeSwitch-bg: hsl(var(--clr-gray-hsl-500));
   --clr-themeSwitch-bg-purple: hsl(var(--clr-purple-hsl));
+
   --clr-dropdown-text: hsl(var(--clr-dark-hsl-700));
 
   --clr-drop-downDivide: hsl(var(--clr-light-hsl-500));
+  --clr-source-link-text: hsl(var(--clr-dark-hsl-700));
+
+  --clr-meaning-text: hsl(var(--clr-gray-hsl-500));
+
+  --clr-section-divide: hsl(var(--clr-light-hsl-500));
 
   /* Fonts-sizes */
   --fs-900: 4rem; //64px
@@ -57,6 +66,8 @@
     calc(0.79rem + 0.38vw),
     var(--fs-500)
   );
+
+  --fs-dynamic-16-20: clamp(var(--fs-400), calc(0.8 + 0.4vw), var(--fs-600));
 
   /* Sizes */
   --size-100: 0.25rem; // 4px

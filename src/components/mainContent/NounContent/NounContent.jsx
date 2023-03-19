@@ -5,10 +5,13 @@ function NounContent() {
   return (
     <section className="nounSection">
       <article>
-        <h2>noun</h2>
+        <div className="section-divider ">
+          <h2 className="section-title ff-dynamic-18-24 fw-700">noun</h2>
+          <div className="divider" />
+        </div>
         <div>
-          <h3>Meaning</h3>
-          <ul>
+          <h3 className="section-meaning fw-400">Meaning</h3>
+          <ul className="section-meaning-text ff-dynamic-14-18 fw-400">
             <li>
               (etc.) A set of keys used to operate a typewriter, computer etc.
             </li>
@@ -23,8 +26,12 @@ function NounContent() {
               separate from the keyboard device.
             </li>
           </ul>
-          <span>Synonyms</span>
-          <span>electronic keyboard</span>
+          <div className="flex flex-gap-1">
+            <span className="section-meaning fw-400">Synonyms</span>
+            <span className="synonym-text fw-700 ff-dynamic-16-20">
+              electronic keyboard
+            </span>
+          </div>
         </div>
       </article>
     </section>

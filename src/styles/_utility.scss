@@ -32,6 +32,41 @@
 .flex {
   display: flex;
 }
+.flex-gap-1 {
+  gap: 1em;
+}
+/* Dynamic fonts */
+.ff-dynamic-18-24 {
+  font-size: var(--dynamic-18-24);
+}
+.ff-dynamic-32-64 {
+  font-size: var(--fs-dynamic-32-64);
+}
+.ff-dynamic-14-18 {
+  font-size: var(--fs-dynamic-14-18);
+}
+.ff-dynamic-16-20 {
+  font-size: var(--fs-dynamic-16-20);
+}
+/* font weight */
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
 
 .padding-8 {
   padding: var(--size-200);
@@ -49,4 +84,27 @@
 .margin-inline-end-12 {
   -webkit-margin-end: var(--size-300);
   margin-inline-end: var(--size-300);
+}
+
+/* other util classes */
+.section-title {
+  color: var(--clr-head-text);
+}
+.section-meaning {
+  color: var(--clr-meaning-text);
+  font-size: var(--fs-400);
+}
+.section-meaning-text {
+  color: var(--clr-body-text);
+  line-height: 24px;
+}
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--clr-section-divide);
+}
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 2em;
 }

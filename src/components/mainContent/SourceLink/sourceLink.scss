@@ -1,0 +1,16 @@
+.source-text {
+  color: var(--clr-meaning-text);
+  font-weight: 400;
+  font-size: var(--fs-dynamic-14-18);
+}
+.source-link {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+
+  a {
+    color: var(--clr-source-link-text);
+    font-weight: 500;
+    font-size: var(--fs-dynamic-14-18);
+  }
+}

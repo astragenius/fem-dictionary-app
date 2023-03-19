@@ -10,7 +10,6 @@ function App() {
     <div className="container ff-inter">
       <Header />
       <MainContent />
-      <Footer />
     </div>
   );
 }
