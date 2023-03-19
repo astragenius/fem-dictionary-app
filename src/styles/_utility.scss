@@ -1,8 +1,12 @@
 .container {
   --max-width: 60.375rem;
-  --padding: 1rem;
+  --padding: 1.5rem;
   width: min(var(--max-width), 100% - var(--padding) * 2);
   margin-inline: auto;
+}
+
+.spacer * + * {
+  margin-top: 1.5em;
 }
 
 /* font change class */
@@ -68,6 +72,24 @@
   font-weight: 900;
 }
 
+/* dynamic spacing */
+
+.dynamic-margin-28-50 {
+  margin-block: var(--space-l);
+}
+
+.dynamic-margin-bt {
+  -webkit-margin-after: var(--space-l);
+  margin-block-end: var(--space-l);
+}
+.dynamic-margin-bt-m {
+  -webkit-margin-after: var(--space-m);
+  margin-block-end: var(--space-m);
+}
+.dynamic-margin-bt-m-block {
+  margin-block: var(--space-m);
+}
+
 .padding-8 {
   padding: var(--size-200);
 }
@@ -93,6 +115,8 @@
 .section-meaning {
   color: var(--clr-meaning-text);
   font-size: var(--fs-400);
+  -webkit-margin-after: 1em;
+  margin-block-end: 1em;
 }
 .section-meaning-text {
   color: var(--clr-body-text);

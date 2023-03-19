@@ -3,7 +3,7 @@ import "./contentTitle.scss";
 
 function ContentTitle() {
   return (
-    <section className="contentTitle">
+    <section className="contentTitle dynamic-margin-bt">
       <div className="title">
         <h1 className="ff-dynamic-32-64 fw-900">keyboard</h1>
         <p className="fw-500 ff-dynamic-18-24">/ˈkiːbɔːd/</p>

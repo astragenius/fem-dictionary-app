@@ -4,7 +4,7 @@ import "./searchbar.scss";
 
 function Searchbar() {
   return (
-    <div className="searchBar-container">
+    <div className="searchBar-container dynamic-margin-bt">
       <label className="searchInput-label" htmlFor="searchInput">
         <input
           className="searchInput"
