@@ -10,7 +10,7 @@ function VerbContent() {
           <div className="divider" />
         </div>
         <span className="section-meaning fw-400">Meaning</span>
-        <ul className="section-meaning-text ff-dynamic-14-18 fw-400">
+        <ul className="list-style section-meaning-text ff-dynamic-14-18 fw-400">
           <li>To type on a computer keyboard.</li>
         </ul>
         <span>“Keyboarding is the part of this job I hate the most.”</span>

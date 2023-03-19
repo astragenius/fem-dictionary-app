@@ -108,3 +108,12 @@
   align-items: center;
   gap: 2em;
 }
+
+.list-style li {
+  padding-left: 0.5em;
+  margin-left: 1.6em;
+}
+.list-style li::marker {
+  color: var(--clr-themeSwitch-bg-purple);
+  font-size: 1.15rem;
+}

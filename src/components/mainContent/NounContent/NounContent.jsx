@@ -11,7 +11,7 @@ function NounContent() {
         </div>
         <div>
           <h3 className="section-meaning fw-400">Meaning</h3>
-          <ul className="section-meaning-text ff-dynamic-14-18 fw-400">
+          <ul className="list-style section-meaning-text ff-dynamic-14-18 fw-500">
             <li>
               (etc.) A set of keys used to operate a typewriter, computer etc.
             </li>
