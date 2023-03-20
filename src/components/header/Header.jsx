@@ -6,7 +6,7 @@ import DropDown from "./Dropdown/DropDown";
 
 function Header() {
   return (
-    <div className="header-container dynamic-margin-28-50">
+    <header className="header-container dynamic-margin-28-50">
       <div className="logo-container">
         <img src={logo} alt="Dictionary web Logo" />
       </div>
@@ -18,7 +18,7 @@ function Header() {
           <ThemeSwitch />
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
