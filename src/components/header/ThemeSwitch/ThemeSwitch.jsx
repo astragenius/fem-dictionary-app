@@ -1,7 +1,10 @@
 import React from "react";
 import "./themeSwitch.scss";
 
-function ThemeSwitch() {
+function ThemeSwitch({setChecked}) {
+  const testFuc = (e) => {
+    setChecked(e.target.checked)
+  } 
   return (
     <div className="checkBox-container margin-inline-8">
       <div className="flex margin-inline-end-12">
@@ -10,6 +13,7 @@ function ThemeSwitch() {
           type="checkbox"
           id="themeSwitch"
           name="themeSwitch"
+          onChange={testFuc}
         />
         <label className="checkbox-label" htmlFor="themeSwitch">
           <span className="visually-hidden">Toggle Switch</span>

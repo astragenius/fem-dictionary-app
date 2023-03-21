@@ -1,3 +1,6 @@
+.nounSection > * {
+  transition: all 0.5s;
+}
 .synonym-text {
   color: var(--clr-themeSwitch-bg-purple);
   cursor: pointer;

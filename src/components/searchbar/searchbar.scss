@@ -2,6 +2,7 @@
   display: flex;
 
   background-color: var(--clr-input-bg);
+
   border-radius: 1rem;
   align-items: center;
   justify-content: space-between;
@@ -19,6 +20,7 @@
   outline: none;
   color: var(--clr-input-text);
   font-weight: 700;
+  
 }
 .searchInput::-webkit-input-placeholder {
   color: var(--clr-input-placeholder-text);

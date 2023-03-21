@@ -7,7 +7,7 @@ import "./index.scss";
 
 function App() {
   return (
-    <div className="container ff-lora">
+    <div className="container ff-inter">
       <Header />
       <MainContent />
     </div>

@@ -31,7 +31,8 @@
   --clr-themeSwitch-bg-purple: hsl(var(--clr-purple-hsl));
 
   --clr-dropdown-text: hsl(var(--clr-dark-hsl-700));
-
+  --clr-dropdown-bg: hsl(var(--clr-light-hsl-100));
+  --clr-dropdown-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
   --clr-drop-downDivide: hsl(var(--clr-light-hsl-500));
   --clr-source-link-text: hsl(var(--clr-dark-hsl-700));
 
@@ -86,24 +87,22 @@
 :root.dark-mode {
   --clr-body: hsl(var(--clr-dark-hsl-900));
 
-  --clr-head-text: hsl(var(--clr-dark-hsl-700));
-  --clr-pronounce-text: hsl(var(--clr-purple-hsl));
-  --clr-body-text: hsl(var(--clr-dark-hsl-700));
+  --clr-head-text: hsl(var(--clr-light-hsl-100));
 
-  --clr-input-bg: hsl(var(--clr-light-hsl-300));
-  --clr-input-text: hsl(var(--clr-dark-hsl-700));
-  --clr-input-placeholder-text: hsl(var(--clr-dark-hsl-700));
+  --clr-body-text: hsl(var(--clr-light-hsl-100));
 
-  --clr-play-bg: hsl(var(--clr-purple-hsl));
-  --clr-themeSwitch-bg: hsl(var(--clr-gray-hsl-500));
-  --clr-themeSwitch-bg-purple: hsl(var(--clr-purple-hsl));
+  --clr-input-bg: hsl(var(--clr-dark-hsl-700));
+  --clr-input-text: hsl(var(--clr-light-hsl-100));
+  --clr-input-placeholder-text: hsl(var(--clr-light-hsl-100 ));
+;
 
-  --clr-dropdown-text: hsl(var(--clr-dark-hsl-700));
+  --clr-dropdown-text: hsl(var(--clr-light-hsl-100));
+  --clr-dropdown-bg: hsl(var(--clr-dark-hsl-700));
+  --clr-dropdown-shadow:  0px 5px 30px #A445ED;
+  --clr-drop-downDivide: hsl(var(--clr-light-hsl-100 ));
+  --clr-source-link-text: hsl(var(--clr-light-hsl-100));
 
-  --clr-drop-downDivide: hsl(var(--clr-light-hsl-500));
-  --clr-source-link-text: hsl(var(--clr-dark-hsl-700));
+  
 
-  --clr-meaning-text: hsl(var(--clr-gray-hsl-500));
-
-  --clr-section-divide: hsl(var(--clr-light-hsl-500));
+  --clr-section-divide: hsl(var(--clr-dark-hsl-600));
 }
