@@ -1,11 +1,15 @@
 import React from "react";
+
 import "./dropDown.scss";
 
-function DropDown() {
+function DropDown({fontType, setFontType}) {
+
+  
+
   return (
     <div className="dropdown">
       <button type="button" className="dropbtn">
-        Sans Serif
+       {fontType}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="14"
@@ -21,9 +25,9 @@ function DropDown() {
         </svg>
       </button>
       <div className="dropdown-content">
-        <button type="button">Sans Serif</button>
-        <button type="button">Serif</button>
-        <button type="button">Mono</button>
+        <button type="button" onClick={() => setFontType('Sans-Serif')}>Sans Serif</button>
+        <button type="button" onClick={() => setFontType('Serif')}>Serif</button>
+        <button type="button" onClick={() => setFontType('Mono')}>Mono</button>
       </div>
     </div>
   );

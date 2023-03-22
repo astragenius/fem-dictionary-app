@@ -4,21 +4,18 @@ import logo from "../../assets/images/logo.svg";
 import ThemeSwitch from "./ThemeSwitch/ThemeSwitch";
 import DropDown from "./Dropdown/DropDown";
 
-function Header() {
+function Header({ fontType, setFontType }) {
   const [isChecked, setChecked] = useState(false);
 
   useEffect(() => {
-    const root = document.querySelector(':root');
-    
-    
-    if(isChecked === true) {
-      root.classList.toggle('dark-mode')
-    }else {
-      root.classList.remove('dark-mode')
+    const root = document.querySelector(":root");
+
+    if (isChecked === true) {
+      root.classList.toggle("dark-mode");
+    } else {
+      root.classList.remove("dark-mode");
     }
-
-
-  }, [isChecked])
+  }, [isChecked]);
 
   return (
     <header className="header-container dynamic-margin-28-50">
@@ -27,10 +24,10 @@ function Header() {
       </div>
       <div className="select-container">
         <div className="font-select-container">
-          <DropDown />
+          <DropDown fontType={fontType} setFontType={setFontType} />
         </div>
         <div className="theme-container">
-          <ThemeSwitch setChecked={setChecked}/>
+          <ThemeSwitch setChecked={setChecked} />
         </div>
       </div>
     </header>
