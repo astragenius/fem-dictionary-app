@@ -1,12 +1,12 @@
 import React from "react";
 import "./contentTitle.scss";
 
-function ContentTitle() {
+function ContentTitle({ word, phonetic }) {
   return (
     <section className="contentTitle dynamic-margin-bt">
       <div className="title">
-        <h1 className="ff-dynamic-32-64 fw-900">keyboard</h1>
-        <p className="fw-500 ff-dynamic-18-24">/ˈkiːbɔːd/</p>
+        <h1 className="ff-dynamic-32-64 fw-900">{word}</h1>
+        <p className="fw-500 ff-dynamic-18-24">{phonetic}</p>
       </div>
       <div className="audio">
         <button className="audioButton" type="button">

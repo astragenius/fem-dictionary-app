@@ -42,3 +42,10 @@
   outline: 1px solid;
   outline-color: var(--clr-themeSwitch-bg-purple);
 }
+
+.searchBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.7em
+}

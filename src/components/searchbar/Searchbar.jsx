@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import searchIcon from "../../assets/images/icon-search.svg";
 import "./searchbar.scss";
 
-function Searchbar() {
+function Searchbar({ searchInput, setSearchInput }) {
+  const [input, setInput] = useState("");
+  const getInput = () => {
+    setSearchInput(input);
+  };
+
   return (
-    <div className="searchBar-container dynamic-margin-bt">
+    <section className="searchBar-container dynamic-margin-bt">
       <label className="searchInput-label" htmlFor="searchInput">
         <input
           className="searchInput"
@@ -12,10 +17,13 @@ function Searchbar() {
           type="text"
           name="searchInput"
           id="searchInput"
+          onChange={(e) => setInput(e.target.value)}
         />
-        <img className="searchIcon" src={searchIcon} alt="" />
+        <button className="searchBtn" type="button" onClick={getInput}>
+          <img className="searchIcon" src={searchIcon} alt="" />
+        </button>
       </label>
-    </div>
+    </section>
   );
 }
 
