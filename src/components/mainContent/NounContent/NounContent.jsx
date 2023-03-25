@@ -1,12 +1,11 @@
 import React from "react";
 import "./nounContent.scss";
 
-function NounContent({noun}) {
+function NounContent({ noun }) {
+  console.log(noun.synonyms);
 
-   console.log(noun.synonyms)
-  
-  const getDefinition = noun.definitions.map((el) => <li>{el.definition}</li>)
-  
+  const getDefinition = noun.definitions.map((el) => <li>{el.definition}</li>);
+
   return (
     <section className="nounSection">
       <article>
@@ -35,7 +34,7 @@ function NounContent({noun}) {
           <div className="flex flex-gap-1 dynamic-margin-bt-m-block">
             <span className="section-meaning fw-400">Synonyms:</span>
             <span className="synonym-text fw-700 ff-dynamic-16-20">
-              {noun.synonyms.length > 0 ? noun.synonyms : 'No synonyms'}
+              {noun.synonyms.length > 0 ? noun.synonyms : "No synonyms"}
             </span>
           </div>
         </div>

@@ -6,23 +6,20 @@ import SourceLink from "./SourceLink/SourceLink";
 import VerbContent from "./VerbContent/VerbContent";
 
 function MainContent({ data }) {
-  
   const searchData = data[0];
-  
-  const { word, phonetic } = searchData;
+  console.log(searchData);
+  const { word, phonetics } = searchData;
   const { meanings } = searchData;
   const [noun, verb] = meanings;
 
   return (
     <main>
-      <ContentTitle word={word} phonetic={phonetic} />
-      <NounContent noun={noun}/>
-      <VerbContent verb={verb}/>
-      <SourceLink />
+      <ContentTitle word={word} phonetics={phonetics} />
+      <NounContent noun={noun} />
+      <VerbContent verb={verb} />
+      <SourceLink data={data} />
     </main>
   );
- 
-
 }
 
 export default MainContent;

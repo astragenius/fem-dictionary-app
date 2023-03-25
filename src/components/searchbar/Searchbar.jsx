@@ -6,7 +6,7 @@ function Searchbar({ searchInput, setSearchInput, setPending }) {
   const [input, setInput] = useState("");
   const getInput = () => {
     setSearchInput(input);
-    setPending(true)
+    setPending(true);
   };
 
   return (

@@ -1,14 +1,17 @@
 import React from "react";
 import "./sourceLink.scss";
 
-function SourceLink() {
+function SourceLink({ data }) {
+  console.log(data);
+  const [{ sourceUrls }] = data;
+  console.log(sourceUrls);
+
+  // [{ phonetics }] = data;
   return (
     <section>
       <span className="section-meaning">Source</span>
       <div className="source-link">
-        <a href="https://en.wiktionary.org/wiki/keyboard">
-          https://en.wiktionary.org/wiki/keyboard
-        </a>
+        <a href={sourceUrls}>{sourceUrls}</a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="14"

@@ -1,7 +1,10 @@
 import React from "react";
 import "./verbContent.scss";
 
-function VerbContent() {
+function VerbContent({ verb }) {
+  console.log(verb);
+  const getDefinition = verb.definitions.map((el) => <li>{el.definition}</li>);
+  const getExample = verb.definitions.map((el) => el.example);
   return (
     <section className="verbSection">
       <article>
@@ -11,11 +14,9 @@ function VerbContent() {
         </div>
         <h3 className="section-meaning fw-400">Meaning</h3>
         <ul className="list-style section-meaning-text ff-dynamic-14-18 fw-400 spacer">
-          <li>To type on a computer keyboard.</li>
+          {getDefinition}
         </ul>
-        <p className="section-meaning fw-500">
-          “Keyboarding is the part of this job I hate the most.”
-        </p>
+        <p className="section-meaning fw-500">{getExample}</p>
       </article>
       <div className="divider dynamic-margin-bt-m-block" />
     </section>
