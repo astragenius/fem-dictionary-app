@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import searchIcon from "../../assets/images/icon-search.svg";
 import "./searchbar.scss";
 
-function Searchbar({ searchInput, setSearchInput }) {
+function Searchbar({ searchInput, setSearchInput, setPending }) {
   const [input, setInput] = useState("");
   const getInput = () => {
     setSearchInput(input);
+    setPending(true)
   };
 
   return (

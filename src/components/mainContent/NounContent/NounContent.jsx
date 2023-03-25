@@ -1,7 +1,12 @@
 import React from "react";
 import "./nounContent.scss";
 
-function NounContent() {
+function NounContent({noun}) {
+
+   console.log(noun.synonyms)
+  
+  const getDefinition = noun.definitions.map((el) => <li>{el.definition}</li>)
+  
   return (
     <section className="nounSection">
       <article>
@@ -12,7 +17,8 @@ function NounContent() {
         <div>
           <h3 className="section-meaning fw-400">Meaning</h3>
           <ul className="list-style section-meaning-text ff-dynamic-14-18 fw-500 spacer">
-            <li>
+            {getDefinition}
+            {/* <li>
               (etc.) A set of keys used to operate a typewriter, computer etc.
             </li>
             <li>
@@ -24,12 +30,12 @@ function NounContent() {
               A device with keys of a musical keyboard, used to control
               electronic sound-producing devices which may be built into or
               separate from the keyboard device.
-            </li>
+            </li> */}
           </ul>
           <div className="flex flex-gap-1 dynamic-margin-bt-m-block">
-            <span className="section-meaning fw-400">Synonyms</span>
+            <span className="section-meaning fw-400">Synonyms:</span>
             <span className="synonym-text fw-700 ff-dynamic-16-20">
-              electronic keyboard
+              {noun.synonyms.length > 0 ? noun.synonyms : 'No synonyms'}
             </span>
           </div>
         </div>

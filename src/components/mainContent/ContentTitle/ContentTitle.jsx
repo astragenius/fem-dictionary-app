@@ -2,6 +2,7 @@ import React from "react";
 import "./contentTitle.scss";
 
 function ContentTitle({ word, phonetic }) {
+  
   return (
     <section className="contentTitle dynamic-margin-bt">
       <div className="title">
