@@ -29,7 +29,7 @@ function App() {
   useEffect(() => {
     getData();
   }, [searchInput]);
-  console.log(data);
+
   return (
     <div className={`container ff-${fontType}`}>
       <Header fontType={fontType} setFontType={setFontType} />

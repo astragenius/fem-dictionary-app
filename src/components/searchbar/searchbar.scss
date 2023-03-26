@@ -20,7 +20,6 @@
   outline: none;
   color: var(--clr-input-text);
   font-weight: 700;
-  
 }
 .searchInput::-webkit-input-placeholder {
   color: var(--clr-input-placeholder-text);
@@ -47,5 +46,16 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  padding: 0.7em
+  padding: 0.7em;
+}
+.inputError {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: var(--clr-error-msg);
+}
+
+.invalid,
+.invalid:focus-within {
+  outline: 1px solid;
+  outline-color: var(--clr-error-msg);
 }
