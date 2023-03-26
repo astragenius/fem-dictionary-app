@@ -1,0 +1,10 @@
+.error-container {
+  display: grid;
+  place-items: center;
+  gap: 1.5em;
+  color: var(--clr-body-text);
+}
+.error-msg {
+  text-align: center;
+  color: var(--clr-meaning-text);
+}

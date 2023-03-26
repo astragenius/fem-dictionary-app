@@ -4,13 +4,12 @@ import Searchbar from "./components/searchbar/Searchbar";
 // import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import MainContent from "./components/mainContent/MainContent";
-
+import Error from "./components/Error/Error";
 import "./index.scss";
-import Fail from "./components/Fail/Fail";
 
 function App() {
   const [fontType, setFontType] = useState("Sans-Serif");
-  const [searchInput, setSearchInput] = useState("napkin");
+  const [searchInput, setSearchInput] = useState("keyboard");
   const [isPending, setPending] = useState(false);
   const [data, setData] = useState([]);
 
@@ -40,7 +39,8 @@ function App() {
         setSearchInput={setSearchInput}
         setPending={setPending}
       />
-      {isPending ? <MainContent data={data} /> : <Fail />}
+      <Error />
+      {/* {isPending ? <MainContent data={data} />} */}
     </div>
   );
 }
