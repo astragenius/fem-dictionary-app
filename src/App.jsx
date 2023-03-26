@@ -14,16 +14,15 @@ function App() {
   const [data, setData] = useState([]);
 
   const getData = async () => {
-    const dicData = await axios.get(
-      `https://api.dictionaryapi.dev/api/v2/entries/en/${searchInput}`
-    );
-    const resData = await dicData.data;
-
-    if (!resData) {
-      console.log("no data");
-    } else {
+    try {
+      const dicData = await axios.get(
+        `https://api.dictionaryapi.dev/api/v2/entries/en/${searchInput}`
+      );
+      const resData = await dicData.data;
       setData(resData);
       setPending(true);
+    } catch (error) {
+      setPending(false);
     }
   };
 
