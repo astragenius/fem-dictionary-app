@@ -2,7 +2,6 @@ import React from "react";
 import "./verbContent.scss";
 
 function VerbContent({ verb }) {
-  console.log(verb);
   const getDefinition = verb.definitions.map((el) => <li>{el.definition}</li>);
   const getExample = verb.definitions.map((el) => el.example);
   return (
