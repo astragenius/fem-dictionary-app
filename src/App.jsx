@@ -39,8 +39,8 @@ function App() {
         setSearchInput={setSearchInput}
         setPending={setPending}
       />
-      <Error />
-      {/* {isPending ? <MainContent data={data} />} */}
+
+      {isPending ? <MainContent data={data} /> : <Error />}
     </div>
   );
 }

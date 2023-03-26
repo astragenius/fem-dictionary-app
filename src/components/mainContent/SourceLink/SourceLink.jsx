@@ -2,11 +2,8 @@ import React from "react";
 import "./sourceLink.scss";
 
 function SourceLink({ data }) {
-  console.log(data);
   const [{ sourceUrls }] = data;
-  console.log(sourceUrls);
 
-  // [{ phonetics }] = data;
   return (
     <section>
       <span className="section-meaning">Source</span>

@@ -15,8 +15,10 @@ function MainContent({ data }) {
   return (
     <main>
       <ContentTitle word={word} phonetics={phonetics} />
-      <NounContent noun={noun} />
-      <VerbContent verb={verb} />
+
+      {noun === undefined ? null : <NounContent noun={noun} />}
+      {verb === undefined ? null : <VerbContent verb={verb} />}
+
       <SourceLink data={data} />
     </main>
   );
