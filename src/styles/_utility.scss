@@ -3,7 +3,6 @@
 }
 html {
   background-color: var(--clr-body);
-  
 }
 .container {
   --max-width: 60.375rem;
@@ -83,6 +82,11 @@ html {
 
 .dynamic-margin-28-50 {
   margin-block: var(--space-l);
+}
+
+.dynamic-margin-block-end-m {
+  -webkit-margin-after: var(--space-m);
+  margin-block-end: var(--space-m);
 }
 
 .dynamic-margin-bt {
