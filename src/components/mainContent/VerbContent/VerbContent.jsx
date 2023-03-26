@@ -15,7 +15,7 @@ function VerbContent({ verb }) {
         <ul className="list-style section-meaning-text ff-dynamic-14-18 fw-400 spacer">
           {getDefinition}
         </ul>
-        <p className="section-meaning fw-500 dynamic-margin-block-end-m">
+        <p className="section-meaning fw-500 dynamic-margin-block-start-m">
           " {getExample} "
         </p>
       </article>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Searchbar from "./components/searchbar/Searchbar";
-// import Footer from "./components/footer/Footer";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import MainContent from "./components/mainContent/MainContent";
 import Error from "./components/Error/Error";
@@ -40,6 +40,7 @@ function App() {
       />
 
       {isPending ? <MainContent data={data} /> : <Error />}
+      <Footer />
     </div>
   );
 }

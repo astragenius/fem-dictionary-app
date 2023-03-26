@@ -84,9 +84,9 @@ html {
   margin-block: var(--space-l);
 }
 
-.dynamic-margin-block-end-m {
-  -webkit-margin-after: var(--space-m);
-  margin-block-end: var(--space-m);
+.dynamic-margin-block-start-m {
+  -webkit-margin-before: var(--space-m);
+  margin-block-start: var(--space-m);
 }
 
 .dynamic-margin-bt {
