@@ -88,6 +88,7 @@
 
 - [Axios](https://axios-http.com/docs/intro)
 - [React icons](https://react-icons.github.io/react-icons/)
+- [Vite.js](https://vitejs.dev/)
 
 
 
@@ -119,6 +120,7 @@
 ![animation](/DOC/animation/fem-dictionary-app-4.gif)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 
 
 
