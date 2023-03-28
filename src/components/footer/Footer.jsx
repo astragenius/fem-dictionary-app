@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer margin">
       <div>
         <p>
-          FrontEnd Mentor Profile:
+          FrontEnd Mentor:
           <a href="https://www.frontendmentor.io/profile/astragenius">
             Matthias
           </a>

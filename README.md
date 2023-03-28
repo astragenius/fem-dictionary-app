@@ -59,14 +59,19 @@
 <a href="https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL">
     <img src='/DOC/imgs/preview.jpg'alt="Logo" width="400" height="auto">
   </a>
+
     
 </div>
 
-
 <p align="right">(<a href="#top">back to top</a>)</p>
+<h4>Implementet functionality</h4>
 
-
-
+- [x] Users can Switch between serif, sans serif, and monospace fonts
+- [x] Users can Switch between light and dark themes
+- [x] Responsive layout for Mobile/Tablet and Desktop devices.
+- [x] Users can play an AudioFile by clicking on the Play button
+- [x] Users can see a form validation message when trying to submit a blank form.
+- [x] Users can see an error site if the word was not found. 
 ### Built With
 <div align="center">
 
@@ -81,19 +86,37 @@
 
 #### Tools that I used
 
+- [Axios](https://axios-http.com/docs/intro)
+- [React icons](https://react-icons.github.io/react-icons/)
 
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
-## Screenshot
+## Screenshots
+
 #### Desktop
-![screenshot](/screenshot/cv-app-desktop.png)
+
+<img src='/DOC/Screenshots/desktop-light.png' alt="Logo" width="500" height="auto">
+<img src='/DOC/Screenshots/tablet-dark.png' alt="Logo" width="500" height="auto">
+
+#### Tablet
+
+<img src='/DOC/Screenshots/tablet-light.png' alt="Logo" width="400" height="auto">
+<img src='/DOC/Screenshots/tablet-dark.png' alt="Logo" width="400" height="auto">
+
+
+#### Mobile Phone
+
+<img src='/DOC/Screenshots/mobile-light.png' alt="Logo" width="200" height="auto">
+
+<img src='/DOC/Screenshots/mobile-dark.png' alt="Logo" width="200" height="auto">
+
 
 ## Animation 
 #### Desktop
-![animation](/screenshot/top-cvProject-final.gif)
+![animation](/DOC/animation/fem-dictionary-app-4.gif)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
