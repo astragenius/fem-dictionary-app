@@ -31,7 +31,7 @@ function Searchbar({ searchInput, setSearchInput, setPending }) {
           onChange={(e) => setInput(e.target.value)}
         />
 
-        <button className="searchBtn" type="button" onClick={getInput}>
+        <button className="searchBtn" type="button" aria-labelledby="searchInput" onClick={getInput}>
           <img className="searchIcon" src={searchIcon} alt="" />
         </button>
       </label>
